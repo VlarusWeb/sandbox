@@ -12,3 +12,8 @@ function mergeArrays(arr1, arr2) {
   const sortingNum = (a, b) => a - b;
   return [...new Set(newArr.sort(sortingNum))];
 }
+
+const firstArr = [1, 5, 7, 2, 4, 5, 2, 1, 8];
+const secondArr = [4, 4, 3, 5, 2, 1, 7, 9, 4, 5, 6];
+
+console.log(mergeArrays(firstArr, secondArr));
