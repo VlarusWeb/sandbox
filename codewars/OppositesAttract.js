@@ -8,6 +8,13 @@
 
 const isInLove = (flower1, flower2) => (flower1 % 2) + (flower2 % 2) === 1 ? true : false;
 
+// 🆕✅ Solution
+
+const lovefunc = (flower1, flower2) => flower1 % 2 !== flower2 % 2;
+
 console.log(isInLove(4, 3));
 console.log(isInLove(5, 7));
 console.log(isInLove(6, 8));
+
+console.log(lovefunc(4, 3));
+console.log(lovefunc(6, 8));
