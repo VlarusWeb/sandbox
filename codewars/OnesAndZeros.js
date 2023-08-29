@@ -26,9 +26,13 @@ let arr8 = [1, 0, 1, 1];
 
 // ✅ Solution
 
-const binaryArrayToNumber = arr => {
-  return parseInt(arr.join(""), 2);
-};
+// const binaryArrayToNumber = arr => {
+//   return parseInt(arr.join(""), 2);
+// };
+
+// 🆕✅ Solution
+
+const binaryArrayToNumber = arr => parseInt(arr.join(""), 2);
 
 console.log(binaryArrayToNumber(arr1));
 console.log(binaryArrayToNumber(arr2));
