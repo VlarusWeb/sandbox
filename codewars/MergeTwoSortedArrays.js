@@ -17,3 +17,13 @@ const firstArr = [1, 5, 7, 2, 4, 5, 2, 1, 8];
 const secondArr = [4, 4, 3, 5, 2, 1, 7, 9, 4, 5, 6];
 
 console.log(mergeArrays(firstArr, secondArr));
+
+
+
+// 🆕✅ Solution
+
+function mergeAndSortArrays(arr1, arr2) {
+  return [...new Set([...arr1, ...arr2].sort((a, b) => a - b))];
+}
+
+console.log(mergeAndSortArrays(firstArr, secondArr));
