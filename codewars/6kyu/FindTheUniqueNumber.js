@@ -10,3 +10,21 @@
 
 // ✅ Solution
 
+function findUniq(arr) {
+const counter = arr.reduce((object, num) => {
+  if(object[num]) {
+    object[num]++;
+  } else {
+    object[num] = 1;
+  } return object;
+  },{});
+  return Number(Object.keys(counter).find(key => counter[key] === 1));
+};
+
+
+
+console.log(findUniq([ 0, 1, 0 ]));
+console.log(findUniq([ 0, 0, 1 ]));
+console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
+console.log(findUniq([ 1, 1, 2, 1, 1 ]));
+console.log(findUniq([ 3, 10, 3, 3, 3 ]));
