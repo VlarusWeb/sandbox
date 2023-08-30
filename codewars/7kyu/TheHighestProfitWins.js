@@ -14,3 +14,15 @@
 // All arrays or lists will always have at least one element, so you don't need to check the length. Also, your function will always get an array or a list, you don't have to check for null, undefined or similar.
 
 // ✅ Solution
+
+const arr = [1, 2, 3, 4, 5];
+const arr1 = [5, 2334454];
+const arr2 = [1];
+
+function minMax(arr){
+  return [Math.min(...arr), Math.max(...arr)];
+}
+
+console.log(minMax(arr));
+console.log(minMax(arr1));
+console.log(minMax(arr2));
