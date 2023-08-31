@@ -21,10 +21,19 @@ const counter = arr.reduce((object, num) => {
   return Number(Object.keys(counter).find(key => counter[key] === 1));
 };
 
-
+function findUniqNum(numArr) {
+  return numArr.find(num => numArr.indexOf(num) === numArr.lastIndexOf(num));
+}
 
 console.log(findUniq([ 0, 1, 0 ]));
 console.log(findUniq([ 0, 0, 1 ]));
 console.log(findUniq([ 1, 1, 1, 2, 1, 1 ]));
 console.log(findUniq([ 1, 1, 2, 1, 1 ]));
 console.log(findUniq([ 3, 10, 3, 3, 3 ]));
+
+
+console.log(findUniqNum([ 0, 1, 0 ]));
+console.log(findUniqNum([ 0, 0, 1 ]));
+console.log(findUniqNum([ 1, 1, 1, 2, 1, 1 ]));
+console.log(findUniqNum([ 1, 1, 2, 1, 1 ]));
+console.log(findUniqNum([ 3, 10, 3, 3, 3 ]));
