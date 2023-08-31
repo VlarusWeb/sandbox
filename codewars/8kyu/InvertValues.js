@@ -7,3 +7,12 @@
 // invert([]) == []
 // You can assume that all values are integers. Do not mutate the input array/list.
 
+// ✅ Solution
+
+function invert(array) {
+  return array.map(num => num * -1);
+};
+
+console.log(invert([1,2,3,4,5]));
+console.log(invert([1,-2,3,-4,5]));
+console.log(invert([]));
