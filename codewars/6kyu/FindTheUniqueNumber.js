@@ -21,6 +21,9 @@ const counter = arr.reduce((object, num) => {
   return Number(Object.keys(counter).find(key => counter[key] === 1));
 };
 
+
+// 🆕✅ Solution
+
 function findUniqNum(numArr) {
   return numArr.find(num => numArr.indexOf(num) === numArr.lastIndexOf(num));
 }
