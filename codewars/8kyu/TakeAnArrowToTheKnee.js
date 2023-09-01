@@ -18,3 +18,10 @@ var ArrowFunc1 = function(arr) {
 
 console.log(ArrowFunc1([84,101,115,116]));
 console.log(ArrowFunc1([70,85,83,32,82,79,72,32,68,65,72]));
+
+// 🆕✅ Solution
+
+const ArrowFunc = (arr) => arr.map(num => String.fromCharCode(num)).join('');
+
+console.log(ArrowFunc1([84,101,115,116]));
+console.log(ArrowFunc1([70,85,83,32,82,79,72,32,68,65,72]));
