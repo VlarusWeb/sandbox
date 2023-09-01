@@ -19,3 +19,13 @@ const zeroFuel1 = (distanceToPump, mpg, fuelLeft) => {
 console.log(zeroFuel1(50, 25, 2));
 console.log(zeroFuel1(100, 50, 1));
 
+
+
+// 🆕✅ Solution
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= mpg * fuelLeft;
+};
+
+console.log(zeroFuel(50, 25, 2));
+console.log(zeroFuel(100, 50, 1));
