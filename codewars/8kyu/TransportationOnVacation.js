@@ -8,3 +8,22 @@
 
 // Write a code that gives out the total amount for different days(d).
 
+// ✅ Solution
+
+function rentalCarCost1(d) {
+  if(d < 3) {
+    return (d * 40);
+  } else if(d >= 3 && d < 7) {
+    return (d * 40 - 20);
+  } else if(d >= 7) {
+    return (d * 40 - 50);
+  }
+}
+
+console.log(rentalCarCost1(1));
+console.log(rentalCarCost1(2));
+console.log(rentalCarCost1(3));
+console.log(rentalCarCost1(4));
+console.log(rentalCarCost1(7));
+console.log(rentalCarCost1(9));
+console.log(rentalCarCost1(14));
