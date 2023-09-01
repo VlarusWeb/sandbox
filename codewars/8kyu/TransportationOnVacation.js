@@ -27,3 +27,21 @@ console.log(rentalCarCost1(4));
 console.log(rentalCarCost1(7));
 console.log(rentalCarCost1(9));
 console.log(rentalCarCost1(14));
+
+
+
+// 🆕✅ Solution
+
+function rentalCarCost(d) {
+  return d >= 7 ? (d * 40) - 50 :
+         d >= 3 ? (d * 40) - 20 :
+         (d * 40);
+};
+
+console.log(rentalCarCost(1));
+console.log(rentalCarCost(2));
+console.log(rentalCarCost(3));
+console.log(rentalCarCost(4));
+console.log(rentalCarCost(7));
+console.log(rentalCarCost(9));
+console.log(rentalCarCost(14));
