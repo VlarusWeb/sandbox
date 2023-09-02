@@ -14,3 +14,18 @@
 // * Input: [1,2,3,4,5], output = [2,3,4,5]
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
+
+// ✅ Solution
+
+function removeSmallest(numbers) {
+  newArr = [...numbers];
+  newArr.splice((numbers.indexOf(Math.min(...numbers))), 1);
+  return newArr;
+}
+
+
+
+console.log(removeSmallest([1, 2, 3, 4, 5]));
+console.log(removeSmallest([5, 3, 2, 1, 4]));
+console.log(removeSmallest([2, 2, 1, 2, 1]));
+console.log(removeSmallest([]));
