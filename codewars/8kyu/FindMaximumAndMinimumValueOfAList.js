@@ -10,3 +10,15 @@
 // Notes
 // You may consider that there will not be any empty arrays/vectors.
 
+// ✅ Solution
+
+var min = (list) => Math.min(...list);
+
+var max = (list) => Math.max(...list);
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]));
+console.log(min([42, 54, 65, 87, 0]));
+console.log(min([4,6,2,1,9,63,-134,566]));
+console.log(max([-52, 56, 30, 29, -54, 0, -110]));
+console.log(max([42, 54, 65, 87, 0]));
+console.log(max([4,6,2,1,9,63,-134,566]));
