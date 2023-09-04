@@ -8,3 +8,23 @@
 // expandedForm(70304); // Should return '70000 + 300 + 4'
 // NOTE: All numbers will be whole numbers greater than 0.
 
+// ✅ Solution
+
+function expandedForm(num) {
+  let arrFromNum = num.toString().split("");
+  let newArr = [];
+  let zeroes = "";
+  for(let i = arrFromNum.length - 1; i >= 0; i--) {
+    if(arrFromNum[i] !== "0") {
+      newArr.unshift(arrFromNum[i] + zeroes);
+      zeroes += "0";
+      } else {
+        zeroes += "0";
+      }
+  } return newArr.join(" + ");
+}
+
+
+console.log(expandedForm(12));
+console.log(expandedForm(42));
+console.log(expandedForm(70304));
