@@ -58,3 +58,26 @@ console.log(duplicateCounter("aaBbcdDde"));
 console.log(duplicateCounter("AbraCadabra"));
 console.log(duplicateCounter("aBbA"));
 console.log(duplicateCounter(""));
+
+
+
+// ❕🆕✅ New Solution
+
+function duplicateCharCount(string) {
+  return string
+  .toLowerCase()
+  .split("")
+  .reduce((obj, char) => {
+  obj[char] = obj[char] ? obj[char] +=1 : 1;
+  if(obj[char] === 2) obj.count += 1;
+  return obj;
+  }, {count:0}).count;
+}
+
+console.log(duplicateCharCount("abracadabra"));
+console.log(duplicateCharCount("abcde"));
+console.log(duplicateCharCount("aaBcde"));
+console.log(duplicateCharCount("aaBbcdDde"));
+console.log(duplicateCharCount("AbraCadabra"));
+console.log(duplicateCharCount("aBbA"));
+console.log(duplicateCharCount(""));
