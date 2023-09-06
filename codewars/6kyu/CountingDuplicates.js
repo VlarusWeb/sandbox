@@ -35,3 +35,26 @@ console.log(duplicateCount("aaBbcdDde"));
 console.log(duplicateCount("AbraCadabra"));
 console.log(duplicateCount("aBbA"));
 console.log(duplicateCount(""));
+
+
+
+// 🆕✅ New Solution
+
+function duplicateCounter(string) {
+  const obj = {};
+  [...string.toLowerCase()].forEach(char => obj[char] = (obj[char] || 0) + 1);
+  let count = 0;
+  for(let key in obj) {
+    if(obj[key] > 1) {
+      count++;
+    }
+  } return count;
+}
+
+console.log(duplicateCounter("abracadabra"));
+console.log(duplicateCounter("abcde"));
+console.log(duplicateCounter("aaBcde"));
+console.log(duplicateCounter("aaBbcdDde"));
+console.log(duplicateCounter("AbraCadabra"));
+console.log(duplicateCounter("aBbA"));
+console.log(duplicateCounter(""));
