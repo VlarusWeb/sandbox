@@ -12,3 +12,26 @@
 // "aA11" -> 2 # 'a' and '1'
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
 
+// ✅ Solution
+
+function duplicateCount(string) {
+  const obj = {};
+  string = string.toLowerCase();
+  for(let char of string) {
+    obj[char] = (obj[char] || 0) + 1;
+  }
+  let count = 0;
+  for(let key in obj) {
+    if(obj[key] > 1) {
+      count += 1;
+    }
+  } return count;
+}
+
+console.log(duplicateCount("abracadabra"));
+console.log(duplicateCount("abcde"));
+console.log(duplicateCount("aaBcde"));
+console.log(duplicateCount("aaBbcdDde"));
+console.log(duplicateCount("AbraCadabra"));
+console.log(duplicateCount("aBbA"));
+console.log(duplicateCount(""));
