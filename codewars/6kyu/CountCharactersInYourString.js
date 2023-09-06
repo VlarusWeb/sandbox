@@ -18,3 +18,12 @@ console.log(count("aba"));
 console.log(count("abba"));
 console.log(count("abbra"));
 console.log(count("abracadabra"));
+
+// 🆕✅ New Solution
+
+const countChar = (string) => (obj = {}, [...string].forEach(char => obj[char] = (obj[char] || 0) + 1), obj);
+
+console.log(countChar("aba"));
+console.log(countChar("abba"));
+console.log(countChar("abbra"));
+console.log(countChar("abracadabra"));
