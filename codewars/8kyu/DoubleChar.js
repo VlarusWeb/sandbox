@@ -18,3 +18,15 @@ console.log(doubleChar("09022021"));
 console.log(doubleChar("Hello, World!"));
 console.log(doubleChar("codewars"));
 console.log(doubleChar("07 September"));
+
+
+
+// 🆕✅ Solution
+
+const doubleCharacters = (str) => str.replace(/./g , "$&$&");
+
+console.log(doubleCharacters("string"));
+console.log(doubleCharacters("09022021"));
+console.log(doubleCharacters("Hello, World!"));
+console.log(doubleCharacters("codewars"));
+console.log(doubleCharacters("07 September"));
