@@ -10,3 +10,14 @@
 
 // patrick feeney => P.F
 
+// ✅ Solution
+
+function abbrevName(name){
+  return name.split(" ")
+    .map(word => word[0])
+    .join(".").toUpperCase();
+}
+
+console.log(abbrevName("John Doe"));
+console.log(abbrevName("john wick"));
+console.log(abbrevName("Michael jackson"));
