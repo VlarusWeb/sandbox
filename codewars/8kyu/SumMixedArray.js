@@ -4,3 +4,12 @@
 
 // Return your answer as a number.
 
+// ✅  Solution
+
+function sumMix(x) {
+  return x.reduce((acc, el) => acc + Number(el), 0);
+}
+
+console.log(sumMix([22, "09", 81]));
+console.log(sumMix([10, "20", 30, "40"]));
+console.log(sumMix([10, 20, 5, "25", "5", "5", 15, "15"]));
