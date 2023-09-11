@@ -24,3 +24,12 @@ console.log(greet("Niks"));
 console.log(greet(""));
 console.log(greet(null));
 
+
+
+// 🆕✅ new Solution
+
+const greeting = (name) => name ? `hello ${name}!` : null;
+
+console.log(greeting("Niks"));
+console.log(greeting(""));
+console.log(greeting(null));
