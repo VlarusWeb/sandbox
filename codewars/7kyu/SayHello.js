@@ -10,3 +10,17 @@
 // greet("") === null; // Return null if input is empty string
 // greet(null) === null; // Return null if input is null
 
+// ✅ Solution
+
+function greet(name) {
+  if(name) {
+    return `hello ${name}!`;
+  } else {
+    return null;
+  }
+}
+
+console.log(greet("Niks"));
+console.log(greet(""));
+console.log(greet(null));
+
