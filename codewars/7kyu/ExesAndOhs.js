@@ -32,3 +32,16 @@ console.log(`return "${XO("ooxXm")}", should be "true"`);
 console.log(`return "${XO("abracadabra")}", should be "true"`); // becouse  both x and o are not present and both return undefined!
 console.log(`return "${XO("oozzyy")}", should be "false"`);
 console.log(`return "${XO("XoroxAndOxorx")}", should be "true"`);
+
+
+
+// 🆕✅ Solution
+
+const XoxO = (str) => (str.match(/x/gi) || "").length === (str.match(/o/gi) || "").length;
+
+console.log(`return "${XoxO("ooxx")}", should be "true"`);
+console.log(`return "${XoxO("xooxx")}", should be "false"`);
+console.log(`return "${XoxO("ooxXm")}", should be "true"`);
+console.log(`return "${XoxO("abracadabra")}", should be "true"`); // becouse  both x and o are not present and both return undefined!
+console.log(`return "${XoxO("oozzyy")}", should be "false"`);
+console.log(`return "${XoxO("XoroxAndOxorx")}", should be "true"`);
