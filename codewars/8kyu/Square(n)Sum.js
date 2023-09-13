@@ -6,10 +6,18 @@
 
 // ✅ Solution
 
-function squreSum(numbers) {
+function squareSum(numbers) {
   return numbers.reduce((acc, num) => acc + num ** 2, 0);
 }
 
-console.log(squreSum([1, 2]));
-console.log(squreSum([0, 3, 4, 5]));
-console.log(squreSum([]));
+console.log(squareSum([1, 2]));
+console.log(squareSum([0, 3, 4, 5]));
+console.log(squareSum([]));
+
+
+
+const squareNumSum = (numbers) => numbers.reduce((acc, num) => acc + num ** 2, 0);
+
+console.log(squareNumSum([1, 2]));
+console.log(squareNumSum([0, 3, 4, 5]));
+console.log(squareNumSum([]));
