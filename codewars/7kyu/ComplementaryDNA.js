@@ -9,3 +9,14 @@
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
 
+const DNAStrand = (dna) => [...dna].map((c) =>
+	c === "A" ? "T"
+	: c === "T" ? "A"
+	: c === "C" ? "G"
+	: c === "G" ? "C"
+	: c
+).join("");
+
+console.log(DNAStrand("AAAA"));
+console.log(DNAStrand("ATTGC"));
+console.log(DNAStrand("GTAT"));
