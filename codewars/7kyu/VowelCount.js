@@ -21,3 +21,12 @@ for(char of str) {
 
 console.log(getCount("abracadabra"));
 console.log(getCount("I'm the good programmer!"));
+
+
+
+// 🆕✅ Solution
+
+const getVowelCount = (str) => [...str].reduce((acc, el) => acc += /[aieou]/.test(el) ? 1 : 0, 0);
+
+console.log(getVowelCount("abracadabra"));
+console.log(getVowelCount("I'm the good programmer!"));
