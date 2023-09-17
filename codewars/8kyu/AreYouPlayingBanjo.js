@@ -26,3 +26,15 @@ console.log(areYouPlayingBanjo("Paul")); //"Paul does not play banjo");
 console.log(areYouPlayingBanjo("Ringo")); //"Ringo plays banjo");
 console.log(areYouPlayingBanjo("bravo")); //"bravo does not play banjo");
 console.log(areYouPlayingBanjo("rolf")); //"rols plays banjo");
+
+
+
+//🆕✅ New Solution
+
+const areYouPlayBanjo = (name) => name[0].match(/r/i) ? `${name} plays banjo` : `${name} does not play banjo`;
+
+console.log(areYouPlayBanjo("Adam")); //"Adam does not play banjo");
+console.log(areYouPlayBanjo("Paul")); //"Paul does not play banjo");
+console.log(areYouPlayBanjo("Ringo")); //"Ringo plays banjo");
+console.log(areYouPlayBanjo("bravo")); //"bravo does not play banjo");
+console.log(areYouPlayBanjo("rolf")); //"rols plays banjo");
