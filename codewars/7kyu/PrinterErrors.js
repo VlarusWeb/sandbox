@@ -17,3 +17,16 @@
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // printer_error(s) => "8/22"
 
+// ✅ Solution
+
+function printerError(s) {
+  let errors = [];
+  for (let c of s) {
+    if (!c.match(/[a-m]/)) {
+      errors.push(c);
+    }
+  } return `${errors.length}/${s.length}`;
+}
+
+console.log(printerError("aaaxbbbbyywawiwjjjwwwm"));
+console.log(printerError("aaabbbbbhaijjjm"));
