@@ -10,3 +10,12 @@
 
 // Happy Coding!
 
+// ✅ Solution
+
+function squareDigits(numbers) {
+  return +numbers.toString().split("").map((n) => n * n).join("");
+}
+
+console.log(squareDigits(245));
+console.log(squareDigits(993));
+console.log(squareDigits(90221));
