@@ -19,3 +19,13 @@ function squareDigits(numbers) {
 console.log(squareDigits(245));
 console.log(squareDigits(993));
 console.log(squareDigits(90221));
+
+
+
+// 🆕✅ New Solution
+
+const squareNumber = (numbers) => +numbers.toString().split("").map((n) => n * n).join("");
+
+console.log(squareNumber(245));
+console.log(squareNumber(993));
+console.log(squareNumber(90221));
