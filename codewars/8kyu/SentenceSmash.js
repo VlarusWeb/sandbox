@@ -6,3 +6,8 @@
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
+// ✅ Solution
+
+const smash = (words) => words.join(" ");
+
+console.log(smash(["I", "am", "a", "really", "good", "programmer", "!"]));
