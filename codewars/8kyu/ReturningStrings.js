@@ -11,3 +11,11 @@ function greet(name) {
 }
 
 console.log(greet("Olegs"));
+
+
+
+// ❕✅ New Solution
+
+const greeting = (name) => `Hello, ${name} how are you doing today?`;
+
+console.log(greeting("Alenka"));
