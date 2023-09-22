@@ -13,3 +13,13 @@ function findAverage(array) {
 console.log(findAverage([1, 1, 1])); // should return 1;
 console.log(findAverage([1, 2, 3])); // should return 2;
 console.log(findAverage([1, 2, 3, 4])); // should return 2.5;
+
+
+
+// ❕✅ Solution with function exspression
+
+const findAvr = (arr) => arr.length === 0 ? 0 : arr.reduce((acc, num) => acc += num) / arr.length;
+
+console.log(findAvr([1, 1, 1])); // should return 1;
+console.log(findAvr([1, 2, 3])); // should return 2;
+console.log(findAvr([1, 2, 3, 4])); // should return 2.5;
