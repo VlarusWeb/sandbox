@@ -22,3 +22,13 @@ var summation = function(num) {
 console.log(summation(1));
 console.log(summation(2));
 console.log(summation(8));
+
+
+
+// ❕✅❕ New Solution   sum = num * (num + 1) / 2
+
+const summ = (num) => num * (num + 1) / 2;
+
+console.log(summ(1));
+console.log(summ(2));
+console.log(summ(8));
