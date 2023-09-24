@@ -16,3 +16,29 @@
 // Function should return an array of all possible words. No sorting is needed.
 
 // Good luck!
+
+// ✅ Solution
+
+const getWords = (word, chars) => {
+  let indexesOfQM = word.split("").reduce((arr, el, i) => el === "?" ? [...arr, i] : arr, []);
+  let possibleWords = [];
+  const getWord = (currIndex, currWord) => {
+    if(currIndex === indexesOfQM.length) {
+      possibleWords.push(currWord);
+      return;
+    }
+    let currQMIndex = indexesOfQM[currIndex];
+    for(let char of chars[currIndex].split("")) {
+      let newWord = currWord.replace(currWord[currQMIndex], char);
+      getWord(currIndex + 1, newWord);
+    }
+  }
+  getWord(0, word);
+  return possibleWords;
+};
+
+
+
+console.log(getWords("wo?ld", ["rms"]));
+console.log(getWords("wo?l?", ["rms", "dng"]));
+console.log(getWords("?o?l?", ["whx", "rms", "dng"]));
