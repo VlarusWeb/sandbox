@@ -14,6 +14,6 @@
 
 const stray = (numbers) => numbers.find(el => numbers.indexOf(el) === numbers.lastIndexOf(el));
 
-console.log(stray([1, 1, 1, 1, 1, 5, 1, 1, 1, 1]));
+console.log(stray([1, 1, 1, 1, 1, 5, 1, 1, 1, 1, 1]));
 console.log(stray([3, 3, 3, 4, 3, 3, 3, 3, 3]));
-console.log(stray([23, 23, 23, 3, 23 ,23]));
+console.log(stray([23, 23, 23, 3, 23 ,23, 23]));
