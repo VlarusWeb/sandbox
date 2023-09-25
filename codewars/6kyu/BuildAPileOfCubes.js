@@ -13,3 +13,18 @@
 
 // findNb(91716553919377) --> -1
 
+// ✅ Solution
+
+function findNb(m) {
+  let a = 0;
+  let n = 1;
+  while(a < m) {
+    a += n**3;
+    n++;
+  }
+  return a === m ? n - 1 : -1;
+}
+
+console.log(findNb(4183059834009)); // should be 2022;
+console.log(findNb(24723578342962));// should be -1;
+console.log(findNb(135440716410000));// should be 4824;
