@@ -8,3 +8,10 @@
 // spinWords( "This is a test") => returns "This is a test"
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
+// ✅ Solution
+
+const spinWords = (string) => string.split(" ").map(word => word.length > 4 ? word.split("").reverse().join("") : word).join(" ");
+
+console.log(spinWords("Hey fellow warriors"));
+console.log(spinWords("This is a test"));
+console.log(spinWords("This is another test"));
