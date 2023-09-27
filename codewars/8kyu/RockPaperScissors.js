@@ -9,3 +9,20 @@
 // "scissors", "rock" --> "Player 2 won!"
 // "paper", "paper" --> "Draw!"
 
+// ✅ Solution
+
+const rps = (p1, p2) => {
+  winCombinations = {
+    rock: "scissors",
+    paper: "rock",
+    scissors: "paper"
+  };
+  return (p1 === p2) ? "Draw!" :
+    winCombinations[p1] === p2 ?
+    "Player 1 won!" : "Player 2 won!";
+}
+
+console.log(rps("rock", "scissors"));
+console.log(rps("scissors", "rock"));
+console.log(rps("paper", "rock"));
+console.log(rps("rock", "rock"));
