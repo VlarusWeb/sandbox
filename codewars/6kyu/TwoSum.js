@@ -9,3 +9,20 @@
 // Based on: http://oj.leetcode.com/problems/two-sum/
 
 // twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
+
+
+// ✅ Solution
+
+function twoSum(numbers, target) {
+  for(let i = 0; i < numbers.length; i++) {
+    for(let y = 1; y < numbers.length; y++) {
+      if(numbers[i] + numbers[y] === target) {
+        return [numbers.indexOf(numbers[i]), numbers.lastIndexOf(numbers[y])];
+      }
+    }
+  }
+}
+
+console.log(twoSum([1, 2, 3], 4));
+console.log(twoSum([2, 3, 4, 5, 6, 7, 8, 9], 8));
+console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8], 10));
