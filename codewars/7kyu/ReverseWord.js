@@ -6,6 +6,8 @@
 // "This is an example!" ==> "sihT si na !elpmaxe"
 // "double  spaces"      ==> "elbuod  secaps"
 
+// ✅ Solution
+
 const reverseWord = (str) => str.split(" ").map(el => el.split("").reverse().join("")).join(" ");
 
 console.log(reverseWord("The quick brown fox jumps over the lazy dog."));
