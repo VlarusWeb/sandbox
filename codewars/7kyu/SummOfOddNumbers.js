@@ -13,3 +13,11 @@
 // 1 -->  1
 // 2 --> 3 + 5 = 8
 
+// ✅ Solution
+
+const rowSumOddNumbers = (n) => n ** 3;
+
+console.log(rowSumOddNumbers(1));
+console.log(rowSumOddNumbers(2));
+console.log(rowSumOddNumbers(3));
+console.log(rowSumOddNumbers(4));
