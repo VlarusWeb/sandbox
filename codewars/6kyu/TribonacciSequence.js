@@ -14,3 +14,28 @@
 
 // Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array (except in C return NULL) and be ready for anything else which is not clearly specified ;
 
+// ✅ Solution
+
+function tribonacci(signature, n) {
+  let result = signature;
+  if(n === 0) {
+    result = [];
+  } else if(n === 1) {
+    result = [1];
+  } else {
+    for(let i = 3; i < n; i++) {
+      result.push(result.slice(-3).reduce((acc, el) => acc += el, 0));
+    }
+  }
+  return result;
+}
+
+console.log(tribonacci([1, 1, 1], 10));
+console.log(tribonacci([0, 0, 1], 10));
+console.log(tribonacci([0, 1, 1], 10));
+console.log(tribonacci([1, 0, 0], 10));
+console.log(tribonacci([0, 0, 0], 10));
+console.log(tribonacci([1, 2, 3], 10));
+console.log(tribonacci([3, 2, 1], 10));
+console.log(tribonacci([1, 1, 1], 1));
+console.log(tribonacci([300, 200, 100], 0));
