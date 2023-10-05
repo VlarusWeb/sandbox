@@ -20,3 +20,10 @@
 // +9 dog years for second year
 // +5 dog years for each year after that
 
+// ✅ Solution
+
+const petYears = (humanYears) => [ humanYears, catYears = humanYears > 1 ? 24 + (humanYears - 2) * 4 : 15, dogYears = humanYears > 1 ? 24 + (humanYears - 2) * 5 : 15];
+
+console.log(petYears(1));
+console.log(petYears(2));
+console.log(petYears(10));
