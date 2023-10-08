@@ -12,3 +12,16 @@
 //   false, false, true,  true]
 // The correct answer would be 17.
 
+
+
+// ✅ Solution
+
+const countSheep = (arr) => arr.reduce((count, el) => count += (el ? 1 : 0), 0);
+
+console.log(countSheep([]));
+console.log(countSheep([null]));
+console.log(countSheep([undefined]));
+console.log(countSheep([false]));
+console.log(countSheep([undefined,null,false,true]));
+console.log(countSheep([undefined,null,false,true,true,false,null,undefined]));
+console.log(countSheep([true,true,true,false,true,true,true,true,true,false,true,false,true,false,false,true,true,true,true,true,false,false,true,true]));
