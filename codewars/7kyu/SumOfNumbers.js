@@ -12,3 +12,11 @@
 // (-1, 0) --> -1 (-1 + 0 = -1)
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 
+// ✅ Solution
+
+const getSum = (a, b) => a < b ? (b * (b + 1) - a * (a - 1)) / 2 : a > b ? (a * (a + 1) - b * (b - 1)) / 2 : a;
+
+console.log(getSum(0, -1));
+console.log(getSum(0, 1));
+console.log(getSum(2, 2));
+console.log(getSum(231, - 538));
