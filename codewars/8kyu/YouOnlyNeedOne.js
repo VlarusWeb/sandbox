@@ -6,3 +6,8 @@
 
 // Return true if the array contains the value, false if not.
 
+const check = (a, x) => a.includes(x);
+
+console.log(check([44, 101], 44));
+console.log(check(["t", "e", "s", "t"], "e"));
+console.log(check(["what", "a", "great", "kata"], "kat"));
