@@ -10,3 +10,12 @@
 
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
+// ✅ Solution
+
+const testEven = n => n % 2 === 0;
+
+console.log(testEven(0));
+console.log(testEven(0.5));
+console.log(testEven(1));
+console.log(testEven(2));
+console.log(testEven(-4));
