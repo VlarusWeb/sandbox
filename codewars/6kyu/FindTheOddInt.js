@@ -34,3 +34,15 @@ console.log(findOdd([0]));
 console.log(findOdd([1, 1, 2]));
 console.log(findOdd([0, 1, 0, 1, 0]));
 console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
+
+
+
+// ❕✅ New Solution
+
+const findOddInt = arr => arr.reduce((a, b) => a ^ b);
+
+console.log(findOddInt([7]));
+console.log(findOddInt([0]));
+console.log(findOddInt([1, 1, 2]));
+console.log(findOddInt([0, 1, 0, 1, 0]));
+console.log(findOddInt([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
