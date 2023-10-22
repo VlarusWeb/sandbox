@@ -57,3 +57,21 @@
 
 // expressionsMatter(1,1,1)  ==>  return 3
 
+// ✅ Solution
+
+function expressionsMatter(a, b, c) {
+  let first = a + b + c;
+  let second = a + b * c;
+  let third = a * b + c;
+  let fourth = a * b * c;
+  let fifth = (a + b) * c;
+  let sixth = a * (b + c);
+  return Math.max(first, second, third, fourth, fifth, sixth);
+}
+
+console.log(expressionsMatter(2, 1, 2));
+console.log(expressionsMatter(2, 1, 1));
+console.log(expressionsMatter(1, 1, 1));
+console.log(expressionsMatter(1, 2, 3));
+console.log(expressionsMatter(1, 3, 1));
+console.log(expressionsMatter(2, 2, 2));
