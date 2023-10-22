@@ -15,3 +15,35 @@
 // Division should be integer division. For example, this should return 2, not 2.666666...:
 // eight(dividedBy(three()));
 
+// ✅ Solution
+
+function createNumFunc(num) {
+  return function (operation) {
+    return operation ? operation(num) : num;
+  };
+}
+
+const zero = createNumFunc(0);
+const one = createNumFunc(1);
+const two = createNumFunc(2);
+const three = createNumFunc(3);
+const four = createNumFunc(4);
+const five = createNumFunc(5);
+const six = createNumFunc(6);
+const seven = createNumFunc(7);
+const eight = createNumFunc(8);
+const nine = createNumFunc(9);
+
+const plus = (rightNum) => (leftNum) => leftNum + rightNum;
+const minus = (rightNum) => (leftNum) => leftNum - rightNum;
+const times = (rightNum) => (leftNum) => leftNum * rightNum;
+const devidedBy = (rightNum) => (leftNum) => Math.floor(leftNum / rightNum);
+
+
+
+console.log(one(plus(two())));
+console.log(nine(plus(nine())));
+console.log(nine(devidedBy(three())));
+console.log(five(times(five())));
+console.log(four(minus(one())));
+console.log(nine(times(nine())));
