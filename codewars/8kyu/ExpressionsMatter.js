@@ -75,3 +75,16 @@ console.log(expressionsMatter(1, 1, 1));
 console.log(expressionsMatter(1, 2, 3));
 console.log(expressionsMatter(1, 3, 1));
 console.log(expressionsMatter(2, 2, 2));
+
+
+
+// ❕✅ New Solution
+
+const expM = (a, b, c) => Math.max(a + b + c, a * b * c, a * (b + c), (a + b) * c);
+
+console.log(expM(2, 1, 2));
+console.log(expM(2, 1, 1));
+console.log(expM(1, 1, 1));
+console.log(expM(1, 2, 3));
+console.log(expM(1, 3, 1));
+console.log(expM(2, 2, 2));
