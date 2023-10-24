@@ -10,3 +10,11 @@
 // don't worry about uppercase vowels
 // y is not considered a vowel for this kata
 
+// ✅ Solution
+
+const shortcut = (string) => string.split("").filter((el) => el.match(/[^aeiou]/g)).join("");
+
+console.log(shortcut("hello"));
+console.log(shortcut("hello how are you?"));
+console.log(shortcut("complain"));
+console.log(shortcut("never"));
