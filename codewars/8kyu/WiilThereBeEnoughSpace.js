@@ -15,3 +15,24 @@
 // cap = 10, on = 5, wait = 5 --> 0 # He can fit all 5 passengers
 // cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 
+// ✅ Solution
+
+function enough(cap, on, wait) {
+  let dontFit = cap - (on + wait);
+  if (dontFit < 0) {
+    return Math.abs(dontFit);
+  } else {
+    return 0;
+  }
+}
+
+console.log(enough(10, 5, 5));
+console.log(enough(100, 60, 50));
+console.log(enough(20, 5, 5));
+
+
+const isEnoughSpace = (cap, on, wait) => (res = (cap - (on + wait))) < 0 ? Math.abs(res) : 0;
+
+console.log(isEnoughSpace(10, 5, 5));
+console.log(isEnoughSpace(100, 50, 60));
+console.log(isEnoughSpace(20, 5, 5));
