@@ -10,3 +10,12 @@
 // Input: 123456789 Output: 987654321
 
 
+
+const descendingOrder = (n) => Number(Array.from(String(n)).sort().reverse().join(""));
+
+console.log(descendingOrder(0));
+console.log(descendingOrder(1));
+console.log(descendingOrder(111));
+console.log(descendingOrder(15));
+console.log(descendingOrder(1021));
+console.log(descendingOrder(123456789));
