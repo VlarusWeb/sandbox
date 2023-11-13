@@ -7,3 +7,11 @@
 // "john McClane" --> "McClane john"
 
 
+
+// ✅ Solution
+
+const nameShuffler = (str) => str.split(" ").reverse().join(" ");
+
+console.log(nameShuffler("John Dow"));
+console.log(nameShuffler("John Wick"));
+console.log(nameShuffler("John Snow"));
