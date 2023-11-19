@@ -12,3 +12,11 @@
 
 
 
+// ✅ Solution
+
+const setAlarm = (employed, vacation) => employed === false ? false : employed === vacation ? false : true;
+
+console.log(setAlarm(true, true)); //Should return false;
+console.log(setAlarm(false, true)); // Should return false;
+console.log(setAlarm(true, false)); // Should return true;
+console.log(setAlarm(false, false)); // Should return false;
