@@ -15,3 +15,15 @@
 
 
 
+// ✅ Solution
+
+const gooseFilter = (birds) => {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  const filtered = [];
+  birds.forEach(el => geese.includes(el) ? null : filtered.push(el));
+  return filtered;
+}
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]));
+console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]));
