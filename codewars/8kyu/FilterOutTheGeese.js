@@ -27,3 +27,13 @@ const gooseFilter = (birds) => {
 console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
 console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]));
 console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]));
+
+
+
+// ❕✅ New Solution
+
+const gooseFilterNew = (birds) => birds.filter(el => !["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"].includes(el));
+
+console.log(gooseFilterNew(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+console.log(gooseFilterNew(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]));
+console.log(gooseFilterNew(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]));
