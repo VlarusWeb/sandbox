@@ -20,3 +20,14 @@ console.log(setAlarm(true, true)); //Should return false;
 console.log(setAlarm(false, true)); // Should return false;
 console.log(setAlarm(true, false)); // Should return true;
 console.log(setAlarm(false, false)); // Should return false;
+
+
+
+// ❕✅ New Solution
+
+const setNewAlarm = (employed, vacation) => employed && !vacation;
+
+console.log(setNewAlarm(true, true)); //Should return false;
+console.log(setNewAlarm(false, true)); // Should return false;
+console.log(setNewAlarm(true, false)); // Should return true;
+console.log(setNewAlarm(false, false)); // Should return false;
