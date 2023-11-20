@@ -13,3 +13,17 @@
 // time = 6.7---> litres = 3
 
 // time = 11.8--> litres = 5
+
+
+
+// ✅ Solution
+
+const litres = (time) => Math.floor(time * 0.5);
+
+console.log(litres(2));     //Should return 1
+console.log(litres(1.4));   //Should return 0
+console.log(litres(12.3));  //Should return 6
+console.log(litres(0.82));  //Should return 0
+console.log(litres(11.8));  //Should return 5
+console.log(litres(1787));  //Should return 893
+console.log(litres(0));     //Should return 0
