@@ -17,3 +17,18 @@ const list2 = ['a', 'b', 'c', 'd'];
 
 console.log(reverseList(list1));
 console.log(reverseList(list2));
+
+
+
+// ❕ solution
+
+function reverseListOrder(list) {
+  const newList = [];
+  for(let item of list) {
+    newList.unshift(item);
+  }
+  return newList;
+}
+
+console.log(reverseListOrder(list1));
+console.log(reverseListOrder(list2));
