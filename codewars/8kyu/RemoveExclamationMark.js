@@ -19,3 +19,16 @@ console.log(removeExclMark(str2));
 console.log(removeExclMark(str3));
 console.log(removeExclMark(str4));
 console.log(removeExclMark(str5));
+
+
+// ❕✅ other Solution
+
+const removeExclMarkFromEnd = (string) => string.replace(/!$/ , "" );
+
+// ❓❕ Tests
+
+console.log(removeExclMarkFromEnd(str1));
+console.log(removeExclMarkFromEnd(str2));
+console.log(removeExclMarkFromEnd(str3));
+console.log(removeExclMarkFromEnd(str4));
+console.log(removeExclMarkFromEnd(str5));
