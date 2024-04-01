@@ -12,3 +12,15 @@
 
 // ✅ Solution
 
+String.prototype.isUpperCase = function() {
+  return this.valueOf() === this.valueOf().toUpperCase();
+}
+
+// ❕❔ Tests
+
+console.log('a'.isUpperCase());
+console.log('A'.isUpperCase());
+console.log('Hello World!'.isUpperCase());
+console.log('HELLO WORLD!'.isUpperCase());
+console.log('ABCDEFJsGKLDFJ'.isUpperCase());
+console.log('ABCDEFJSGKLDFJ'.isUpperCase());
