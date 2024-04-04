@@ -48,3 +48,17 @@ console.log(to24hourTime(1, 5, "am"));
 console.log(to24hourTime(12, 55, "pm"));
 console.log(to24hourTime(12, 0, "pm"));
 console.log(to24hourTime(12, 15, "am"));
+
+
+
+// ✅❕ Other solution
+
+const get24hourTime = (hour, minute, period) => (hour % 12 + (period === "pm" ? 12 : 0)).toString().padStart(2, "0") + minute.toString().padStart(2, "0");
+
+// ❕❔ Tests
+
+console.log(get24hourTime(1, 5, "pm"));
+console.log(get24hourTime(1, 5, "am"));
+console.log(get24hourTime(12, 55, "pm"));
+console.log(get24hourTime(12, 0, "pm"));
+console.log(get24hourTime(12, 15, "am"));
