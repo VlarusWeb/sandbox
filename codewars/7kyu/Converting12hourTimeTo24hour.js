@@ -12,7 +12,7 @@
 
 
 
-// ❕ Solution
+// ✅❕ Solution
 
 function to24hourtime(hour, minute, period) {
     let minutes = (minute < 10) ? "0" + minute : minute;
@@ -27,8 +27,24 @@ function to24hourtime(hour, minute, period) {
     }
   }
 
+// ❕❔ Tests
+
 console.log(to24hourtime(1, 5, "pm"));
 console.log(to24hourtime(1, 5, "am"));
 console.log(to24hourtime(12, 55, "pm"));
 console.log(to24hourtime(12, 0, "pm"));
 console.log(to24hourtime(12, 15, "am"));
+
+
+
+// ✅❕ Other solution
+
+const to24hourTime = (hour, minute, period) => (period === "am" && hour === 12 || period === "pm" && hour < 12) ? (period === "am" && hour === 12) ? `00${minute.toString().padStart(2, "0")}` : `${hour + 12}${minute.toString().padStart(2, "0")}` : `${hour.toString().padStart(2, "0")}${minute.toString().padStart(2, "0")}`;
+
+// ❕❔ Tests
+
+console.log(to24hourTime(1, 5, "pm"));
+console.log(to24hourTime(1, 5, "am"));
+console.log(to24hourTime(12, 55, "pm"));
+console.log(to24hourTime(12, 0, "pm"));
+console.log(to24hourTime(12, 15, "am"));
