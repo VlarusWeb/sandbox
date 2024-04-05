@@ -27,3 +27,17 @@ console.log(addLength("Hello word!"));
 console.log(addLength("I'm all the way up!"));
 console.log(addLength("Nothing can stop me!"));
 console.log(addLength("Today is that day!"));
+
+
+
+// ❕✅ New Solution
+
+const addStrLength = (str) => str.split(" ").map(word => `${word} ${word.length}`);
+
+// ❕❔ Tests
+
+console.log(addStrLength("I am a good programmer!"));
+console.log(addStrLength("Hello world!"));
+console.log(addStrLength("I'm all the way up!"));
+console.log(addStrLength("Nothing can stop me!"));
+console.log(addStrLength("Today is a day!"));
