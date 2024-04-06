@@ -22,3 +22,17 @@ console.log(sayHello(['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois'));
 console.log(sayHello(['Wallace','Russel','Osbourne'],'Albany','New York'));
 console.log(sayHello(["John", "Week"], "New York City", "New York State"));
 console.log(sayHello(["John", "Snow"], "the Tower of joy", "Red Mountains of Dorne"));
+
+
+
+// ❕✅ Other solution
+
+const sayHi = (name, city, state) => `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+
+// ❕❔ Tests
+
+console.log(sayHi(["John", "Smith"], "Phenix", "Arizona"));
+console.log(sayHi(['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois'));
+console.log(sayHi(['Wallace','Russel','Osbourne'],'Albany','New York'));
+console.log(sayHi(["John", "Week"], "New York City", "New York State"));
+console.log(sayHi(["John", "Snow"], "the Tower of joy", "Red Mountains of Dorne"));
