@@ -53,3 +53,25 @@ console.log(getFirst([1,2,3]));
 console.log(getLast([1,2,3]));
 console.log(pushElement([1,2,3]));
 console.log(popElement([1,2,3]));
+
+
+
+// ❕✅ Other Solution
+
+const nGetLength = (arr) => arr.length;
+
+const nGetFirst = (arr) => arr[0];
+
+const nGetLast = (arr) => arr[arr.length - 1];
+
+const nPushElement = (arr) => {let el = 1; return arr.push(el)};
+
+const nPopElement = (arr) => arr.pop();
+
+// ! ? Tests
+
+console.log(nGetLength([1,2,3]));
+console.log(nGetFirst([1,2,3]));
+console.log(nGetLast([1,2,3]));
+console.log(nPushElement([1,2,3]));
+console.log(nPopElement([1,2,3]));
