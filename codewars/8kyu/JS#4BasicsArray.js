@@ -19,3 +19,37 @@
 // I've written five functions. Each function receives a parameter arr which is an array. Complete the functions using arr inside the function bodies.
 
 // ✅ Solution
+
+//return length of arr
+function getLength(arr) {
+  return arr.length;
+}
+
+//return the first element of arr
+function getFirst(arr) {
+  return arr[0];
+}
+
+//return the last element of arr
+function getLast(arr) {
+  return arr[arr.length -1];
+}
+
+//push el to arr
+function pushElement(arr) {
+  var el = 1;
+  return arr.push(el);
+}
+
+//pop an element from arr
+function popElement(arr) {
+  return arr.pop();
+}
+
+// ❕❔ Tests
+
+console.log(getLength([1,2,3]));
+console.log(getFirst([1,2,3]));
+console.log(getLast([1,2,3]));
+console.log(pushElement([1,2,3]));
+console.log(popElement([1,2,3]));
